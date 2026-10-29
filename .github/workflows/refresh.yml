@@ -1,0 +1,62 @@
+name: Refresh recession odds
+
+# Rebuilds the dashboard from Kalshi, Polymarket and the NY Fed, publishes it to GitHub Pages,
+# then commits the refreshed raw-data cache (which also keeps the schedule from going idle).
+on:
+  schedule:
+    - cron: "17 22 * * *"   # daily 22:17 UTC = 09:17 AEDT / 08:17 AEST, after the US session
+  workflow_dispatch: {}      # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write   # push the refreshed cache/
+  pages: write      # deploy to GitHub Pages
+  id-token: write   # required by deploy-pages
+
+concurrency:
+  group: refresh-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Exits non-zero if the sanity gate fails (stale or out-of-range data, missing contracts),
+      # so a bad build never replaces the live page.
+      - name: Build dashboard
+        run: python rebuild.py _site --cache cache
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Commit refreshed data cache
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cache
+          if git diff --cached --quiet; then
+            echo "Cache unchanged; nothing to commit."
+          else
+            git commit -m "data: refresh $(date -u +%Y-%m-%d)"
+            git pull --rebase --autostash
+            git push
+          fi
