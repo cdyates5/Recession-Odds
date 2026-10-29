@@ -1,0 +1,71 @@
+[
+ {
+  "ident": "RECSSNBER-23",
+  "key": "K23",
+  "venue": "Kalshi",
+  "window": "2Q negative real GDP within 2023 (BEA advance)",
+  "year": 2023
+ },
+ {
+  "ident": "RECSSNBER-24",
+  "key": "K24",
+  "venue": "Kalshi",
+  "window": "2Q negative real GDP in 2023 or 2024 (BEA)",
+  "year": 2024
+ },
+ {
+  "cumulative": false,
+  "ident": "us-recession-in-2024-1",
+  "key": "P24",
+  "venue": "Polymarket",
+  "window": "2Q negative real GDP within 2024 (BEA, latest revision)",
+  "year": 2024
+ },
+ {
+  "ident": "RECSSNBER-25",
+  "key": "K25",
+  "venue": "Kalshi",
+  "window": "2Q negative real GDP in 2024 or 2025 (BEA)",
+  "year": 2025
+ },
+ {
+  "cumulative": false,
+  "ident": "us-recession-in-2025",
+  "key": "P25",
+  "venue": "Polymarket",
+  "window": "2Q negative GDP Q4'24-Q4'25, or NBER announces a 2025 recession by 31 Dec 2025",
+  "year": 2025
+ },
+ {
+  "ident": "KXRECSSNBER-26",
+  "key": "K26",
+  "series": "KXRECSSNBER",
+  "venue": "Kalshi",
+  "window": "2Q negative real GDP in 2025 or 2026 (BEA)",
+  "year": 2026
+ },
+ {
+  "cumulative": true,
+  "ident": "us-recession-by-end-of-2026",
+  "key": "P26",
+  "venue": "Polymarket",
+  "window": "2Q negative GDP Q2'25-Q4'26, or NBER announces a 2025/26 recession",
+  "year": 2026
+ },
+ {
+  "ident": "KXRECSSNBER-27",
+  "key": "K27",
+  "series": "KXRECSSNBER",
+  "venue": "Kalshi",
+  "window": "2Q negative real GDP, Q4'26 through Q4'27 (BEA advance)",
+  "year": 2027
+ },
+ {
+  "cumulative": true,
+  "ident": "us-recession-by-end-of-2027-20260807185409760",
+  "key": "P27",
+  "venue": "Polymarket",
+  "window": "Cumulative: 2Q negative GDP Q2'25-Q4'27, or NBER announces a 2025-27 recession",
+  "year": 2027
+ }
+]
