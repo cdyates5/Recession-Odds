@@ -1,4 +1,4 @@
-{"meta":{"close": "2027-01-31", "fetched": "2026-11-07T01:57Z", "last": 0.02, "oi": 890913.33, "open": "2025-07-14", "result": "open", "rules": "If there are two consecutive quarters of negative GDP growth in 2025 or 2026, according to the Bureau of Economic Analysis, then the market resolves to Yes.", "url": "https://kalshi.com/markets/kxrecssnber", "volume": 4125620.86},
+{"meta":{"close": "2027-01-31", "fetched": "2026-11-08T01:27Z", "last": 0.02, "oi": 888602.4, "open": "2025-07-14", "result": "open", "rules": "If there are two consecutive quarters of negative GDP growth in 2025 or 2026, according to the Bureau of Economic Analysis, then the market resolves to Yes.", "url": "https://kalshi.com/markets/kxrecssnber", "volume": 4133414.73},
 "rows":[
 ["2025-07-14", 0.42],
 ["2025-07-15", 0.42],
@@ -442,5 +442,6 @@
 ["2026-11-03", 0.03],
 ["2026-11-04", 0.07],
 ["2026-11-05", 0.03],
-["2026-11-06", 0.04]
+["2026-11-06", 0.04],
+["2026-11-07", 0.03]
 ]}
