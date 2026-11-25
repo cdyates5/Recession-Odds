@@ -1,4 +1,4 @@
-{"meta":{"close": "2027-01-31", "fetched": "2026-11-23T02:45Z", "last": 0.0275, "oi": null, "open": "2025-09-29", "result": "open", "rules": "This market will resolve to \u201cYes\u201d if either of the following conditions is met:\n\n1.  The seasonally adjusted annualized percent change in quarterly U.S. real GDP from the previous quarter is less than 0.0 for two consecutive quarters between Q2 2025 and Q4 2026 (inclusive), as reported by the Bureau of Economic Analysis (BEA). \n\n2.  The National Bureau of Economic Research (NBER) publicly announces that a recession has occurred in the United States, at any point during 2025 or 2026, with the announcement made by the time the BEA releases the advance estimate for Q4 2026.", "url": "https://polymarket.com/event/us-recession-by-end-of-2026", "volume": 2530910.940198},
+{"meta":{"close": "2027-01-31", "fetched": "2026-11-25T04:54Z", "last": 0.0265, "oi": null, "open": "2025-09-29", "result": "open", "rules": "This market will resolve to \u201cYes\u201d if either of the following conditions is met:\n\n1.  The seasonally adjusted annualized percent change in quarterly U.S. real GDP from the previous quarter is less than 0.0 for two consecutive quarters between Q2 2025 and Q4 2026 (inclusive), as reported by the Bureau of Economic Analysis (BEA). \n\n2.  The National Bureau of Economic Research (NBER) publicly announces that a recession has occurred in the United States, at any point during 2025 or 2026, with the announcement made by the time the BEA releases the advance estimate for Q4 2026.", "url": "https://polymarket.com/event/us-recession-by-end-of-2026", "volume": 2537279.890198001},
 "rows":[
 ["2025-09-29", 0.44],
 ["2025-09-30", 0.465],
@@ -386,5 +386,7 @@
 ["2026-11-20", 0.04],
 ["2026-11-21", 0.0305],
 ["2026-11-22", 0.0275],
-["2026-11-22", 0.0275]
+["2026-11-23", 0.0205],
+["2026-11-24", 0.0265],
+["2026-11-24", 0.0265]
 ]}
